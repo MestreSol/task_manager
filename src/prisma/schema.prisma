@@ -11,6 +11,7 @@ model Task {
   id          Int      @id @default(autoincrement())
   title       String
   description String?
+  status      String @default("Schedule")  
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
